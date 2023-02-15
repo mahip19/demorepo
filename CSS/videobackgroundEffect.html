@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Background Effect</title>
+    <style>
+      .background {
+        background-color: rgba(242, 112, 134, 0.7);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+        background-size: cover;
+      }
+      .background-video {
+        position: fixed;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        /* z-index: -1; */
+      }
+      h2 {
+        background-color: rgb(90, 72, 180);
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <video
+        class="background-video"
+        src="../Videos/mrbean.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+    <h2>The name is</h2>
+
+    <h2>Bean...</h2>
+    <h2>Mr. Bean</h2>
+  </body>
+</html>

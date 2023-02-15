@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      div {
+        background-color: violet;
+        height: 200px;
+        width: 300px;
+        color: white;
+        font-size: 20px;
+      }
+      .divClass {
+        background-color: yellow;
+        height: 300px;
+        width: 350px;
+        color: white;
+        font-size: 20px;
+      }
+      #d1 {
+        background-color: gray;
+        height: 200px;
+        width: 200px;
+        color: red;
+        font-size: 25px;
+      }
+    </style>
+    <link rel="stylesheet" href="../CSS/stylesheet/demo.css" />
+  </head>
+  <body>
+    <div
+      style="
+        background-color: black !important;
+        background-color: blue !important;
+        color: white;
+      "
+    >
+      Inline Stylesheet
+    </div>
+    <hr />
+    <div>Internal stylesheet - tag</div>
+    <hr />
+    <div>Internal stylesheet - tag</div>
+    <hr />
+    <div>Internal stylesheet - tag</div>
+    <hr />
+    <div class="divClass">Internal Stylesheet - class</div>
+    <hr />
+    <div class="divClass">Internal Stylesheet - class</div>
+    <hr />
+
+    <div style="background-color: pink" class="divClass" id="d1">
+      Internal Stylesheet - id
+    </div>
+    <hr />
+  </body>
+</html>

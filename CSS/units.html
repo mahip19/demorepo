@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100wh;
+      }
+      .parent {
+        font-size: 15px;
+      }
+      .em-child {
+        font-size: 2em;
+      }
+      .rem-child {
+        font-size: 2rem;
+      }
+      .container1 {
+        background-color: red;
+        height: 100vh;
+      }
+      .d1 {
+        height: 50vh;
+        width: 50vw;
+        background-color: yellow;
+      }
+      .d2 {
+        height: 50%;
+        width: 50%;
+        background-color: indigo;
+      }
+      .container2 {
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 79vh;
+        width: 90vw;
+        background-color: antiquewhite;
+      }
+      .inch {
+        border-radius: 14px;
+
+        background-color: blueviolet;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 9in;
+      }
+      .cm {
+        background-color: blueviolet;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 9cm;
+      }
+      .pc {
+        background-color: blueviolet;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 9pc;
+      }
+      .mm {
+        background-color: blueviolet;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 9mm;
+      }
+      .pt {
+        background-color: blueviolet;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 9pt;
+      }
+      .px {
+        background-color: blueviolet;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 9px;
+      }
+    </style>
+    <title>CSS UNITS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent">
+        15
+        <div class="em-child">
+          15*2=30
+          <div class="em-child">
+            30*2=60
+            <div class="em-child">60*2=120</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="parent">
+        15
+        <div class="rem-child">
+          16*2=32
+          <div class="rem-child">
+            16*2=32
+            <div class="rem-child">16*2=32</div>
+          </div>
+          <div style="font-size: 32px">16*2=32</div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container1">
+      <div class="d1">
+        <div class="d2"></div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="inch"></div>
+      <b>9 inch</b>
+      <div class="cm"></div>
+      <b>9 cm</b>
+      <div class="pc"></div>
+      <b>9 pc</b>
+      <div class="mm"></div>
+      <b>9 mm</b>
+      <div class="pt"></div>
+      <b>9 pt</b>
+      <div class="px"></div>
+      <b>9 px</b>
+    </div>
+  </body>
+</html>

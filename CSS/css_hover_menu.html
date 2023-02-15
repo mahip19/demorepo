@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS HOVER MENU</title>
+
+    <style type="text/css">
+      /* #h1 li ul li {
+        display: none;
+      }
+      #h1 li:hover ul li {
+        display: block;
+      }
+      #h1 li:hover ul li ul li {
+        display: none;
+      }
+
+      #h1 li ul li:hover ul li {
+        display: block; 
+      }
+      #h1 li ul li:hover ul li ul li {
+        display: none;
+      }
+      #h1 li ul li ul li:hover ul li {
+        display: block;
+      }
+
+      #u2 li ul li:nth-child(2) {
+        color: blue;
+      }
+       */
+      #h1 li > ul {
+        display: none;
+      }
+      #h1 li:hover > ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="h1">
+      <li>
+        Google
+        <ul>
+          <li>
+            Gmail
+            <ul>
+              <li>
+                Sign In
+                <ul>
+                  <li>Admin</li>
+                  <li>Guest</li>
+                </ul>
+              </li>
+              <li>Sign Up</li>
+            </ul>
+          </li>
+          <li>Drive</li>
+          <li>Map</li>
+        </ul>
+      </li>
+      <li>Facebook</li>
+      <li>
+        Microsoft
+        <ul>
+          <li>Bing</li>
+          <li>Linked In</li>
+        </ul>
+      </li>
+      <li>MSN</li>
+      <li>
+        Amazon
+        <ul>
+          <li>AWS</li>
+          <li>Ecommerce</li>
+          <li>A-ML</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr />
+
+    <ul id="u2">
+      <li>
+        apple
+        <ul>
+          <li>three</li>
+          <li>six</li>
+          <li>nine</li>
+        </ul>
+      </li>
+      <li>banana</li>
+      <li>
+        chickoo
+        <ul>
+          <li>
+            Sign In
+            <ul>
+              <li>Admin</li>
+              <li>Guest</li>
+            </ul>
+          </li>
+          <li>Sign Up</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
