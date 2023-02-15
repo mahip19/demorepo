@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      div {
+        background-color: rgb(237, 101, 146);
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+    <script src="./script.js"></script>
+    <script>
+      function onAlertClick() {
+        alert("This is internal alert");
+      }
+      function onConfirmClick() {
+        confirm("This is internal confirm alert");
+      }
+      function onPromptClick() {
+        prompt("this is internal prompt");
+      }
+
+      function bodyBgWhite() {
+        document.body.style.backgroundColor = "white";
+      }
+
+      function divGreen() {
+        document.getElementById("D1").style.backgroundColor = "green";
+      }
+
+      function bodycolorPrompt() {
+        document.body.style.backgroundColor = prompt("enter color");
+      }
+      function divcolorPrompt() {
+        document.getElementById("D1").style.backgroundColor =
+          prompt("enter color");
+      }
+
+      function colorpickerBody() {
+        document.body.style.backgroundColor =
+          document.getElementById("cp1").value;
+      }
+      function colorpickerDiv() {
+        document.getElementById("D1").style.backgroundColor =
+          document.getElementById("cp2").value;
+      }
+    </script>
+    <title>Access DOM elements</title>
+  </head>
+  <body>
+    <div id="D1">tun tunak tun tun tunak tun</div>
+    <hr />
+    <input
+      type="button"
+      value="inline alert"
+      onclick="alert('This is alert')"
+    />
+    <input
+      type="button"
+      value="inline confirm"
+      onclick="confirm('This is confirm alert')"
+    />
+    <input
+      type="button"
+      value="inline prompt"
+      onclick="prompt('This is prompt')"
+    />
+
+    <hr />
+    <input type="button" value="internal alert" onclick="onAlertClick()" />
+    <input type="button" value="internal confirm" onclick="onConfirmClick()" />
+    <input type="button" value="internal prompt" onclick="onPromptClick()" />
+
+    <hr />
+    <input
+      type="button"
+      value="external alert"
+      onclick="onAlertClickExternal()"
+    />
+    <input
+      type="button"
+      value="external confirm"
+      onclick="onConfirmClickExternal()"
+    />
+    <input
+      type="button"
+      value="external prompt"
+      onclick="onPromptClickExternal()"
+    />
+
+    <hr />
+
+    <input
+      type="button"
+      value="turn body white"
+      body
+      bg
+      white
+      onclick="bodyBgWhite()"
+    />
+    <input type="button" value="div green" onclick="divGreen()" />
+
+    <hr />
+    <input type="button" value="pick a color" onclick="bodycolorPrompt()" />
+    <input
+      type="button"
+      value="mention your color"
+      onclick="divcolorPrompt()"
+    />
+
+    <hr />
+
+    <input
+      type="color"
+      name="choose color"
+      value="body color"
+      id="cp1"
+      onchange="colorpickerBody()"
+    />
+    <input
+      type="color"
+      name="choose color"
+      id="cp2"
+      onchange="colorpickerDiv()"
+    />
+  </body>
+</html>
